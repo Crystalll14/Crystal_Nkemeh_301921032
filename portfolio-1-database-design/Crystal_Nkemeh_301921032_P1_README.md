@@ -26,3 +26,29 @@ Register customers and create bank accounts; deposit and withdraw funds; transfe
 ## Scope
 
 The system covers a single fictional Nigerian digital bank using simulated customer, account, and transaction data. It includes customer registration, account management, NGN deposits and withdrawals, internal transfers, simulated interbank transfers, beneficiary management, transaction reversals, and audit records. Foreign currencies, currency conversion, live banking network integrations, loans, interest calculations, card processing, and user authentication are outside the scope of the system.
+
+## Design and implementation files
+
+| File | Contents |
+|---|---|
+| [Database Design](Crystal_Nkemeh_301921032_P1_Design.md) | Description of PurpleBank's six entities, attributes, primary keys, foreign keys and relationships. |
+| [ER Diagram](Crystal_Nkemeh_301921032_P1_ERDiagram.md) | Visual representation of the database entities, attributes and relationships. |
+| [Normalisation](Crystal_Nkemeh_301921032_P1_Normalisation.md) | Explanation and examples of First, Second and Third Normal Forms (1NF, 2NF and 3NF). |
+| [Database Schema](Crystal_Nkemeh_301921032_P1_Schema.sql) | PostgreSQL scripts for creating tables, keys, constraints and the reversal uniqueness index. |
+| [Sample Data](Crystal_Nkemeh_301921032_P1_SampleData.sql) | SQL statements for inserting fictional customers, accounts, banks, beneficiaries, transactions and audit records. |
+| [Constraint Tests](Crystal_Nkemeh_301921032_P1_ConstraintTests.sql) | SQL statements designed to test data validation rules, including required fields, uniqueness, relationships and valid values. |
+| [Screenshots](screenshots/) | Evidence of database creation, table structures, sample data and constraint testing. |
+
+## Implementation
+
+PurpleBank's relational database was implemented using PostgreSQL 16 within GitHub Codespaces. The database, named `purplebank_portfolio`, contains six tables: `customer`, `account`, `bank`, `beneficiary`, `bank_transaction` and `transaction_audit`. Each table has a primary key, while foreign keys establish relationships between customers, accounts, beneficiaries, banks and financial transactions.
+
+The database schema includes NOT NULL, UNIQUE, FOREIGN KEY and CHECK constraints to maintain data integrity. These restrict duplicate identifiers, invalid account balances, unsupported currencies, invalid transaction statuses and incomplete transfer information. A unique partial index also prevents multiple reversal records from referencing the same original transaction. Fictional banking records were inserted using the sample-data script, followed by separate tests using deliberately invalid records.
+
+## Test results
+
+The sample-data script was designed to insert two customers, two external banks, three bank accounts, two beneficiaries, five banking transactions and five transaction audit records. These records represent PurpleBank's core operations, including deposits, withdrawals, internal transfers, simulated interbank transfers and transaction reversals.
+
+Fifteen negative test cases were prepared to assess the database constraints. They cover missing required values, duplicate records, invalid foreign keys, negative balances, unsupported currencies and statuses, incomplete internal transfers, duplicate reversals and invalid audit references. PostgreSQL error messages provide evidence of the constraints rejecting invalid records.
+
+The expected final record counts are 2 customers, 2 banks, 3 accounts, 2 beneficiaries, 5 transactions and 5 audit records, provided all sample inserts succeeded once and every negative test was rejected. Additional transaction logic is required to demonstrate automatic balance updates, concurrent spending protection, reversal eligibility and authorisation. These behaviours are not fully enforced by the table definitions alone.
