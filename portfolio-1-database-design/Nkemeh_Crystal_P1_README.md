@@ -31,12 +31,12 @@ The system covers a single fictional Nigerian digital bank using simulated custo
 
 | File | Contents |
 |---|---|
-| [Database Design](Crystal_Nkemeh_301921032_P1_Design.md) | Description of PurpleBank's six entities, attributes, primary keys, foreign keys and relationships. |
-| [ER Diagram](Crystal_Nkemeh_301921032_P1_ERDiagram.md) | Visual representation of the database entities, attributes and relationships. |
-| [Normalisation](Crystal_Nkemeh_301921032_P1_Normalisation.md) | Explanation and examples of First, Second and Third Normal Forms (1NF, 2NF and 3NF). |
-| [Database Schema](Crystal_Nkemeh_301921032_P1_Schema.sql) | PostgreSQL scripts for creating tables, keys, constraints and the reversal uniqueness index. |
-| [Sample Data](Crystal_Nkemeh_301921032_P1_SampleData.sql) | SQL statements for inserting fictional customers, accounts, banks, beneficiaries, transactions and audit records. |
-| [Constraint Tests](Crystal_Nkemeh_301921032_P1_ConstraintTests.sql) | SQL statements designed to test data validation rules, including required fields, uniqueness, relationships and valid values. |
+| [Database Design](Nkemeh_Crystal_P1_Design.md) | Description of PurpleBank's six entities, attributes, primary keys, foreign keys and relationships. |
+| [ER Diagram](Nkemeh_Crystal_P1_ERDiagram.md) | Visual representation of the database entities, attributes and relationships. |
+| [Normalisation](Nkemeh_Crystal_P1_Normalisation.md) | Explanation and examples of First, Second and Third Normal Forms (1NF, 2NF and 3NF). |
+| [Database Schema](Nkemeh_Crystal_P1_Schema.sql) | PostgreSQL scripts for creating tables, keys, constraints and the reversal uniqueness index. |
+| [Sample Data](Nkemeh_Crystal_P1_SampleData.sql) | SQL statements for inserting fictional customers, accounts, banks, beneficiaries, transactions and audit records. |
+| [Constraint Tests](Nkemeh_Crystal_P1_ConstraintTests.sql) | SQL statements designed to test data validation rules, including required fields, uniqueness, relationships and valid values. |
 | [Screenshots](screenshots/) | Evidence of database creation, table structures, sample data and constraint testing. |
 
 ## Implementation

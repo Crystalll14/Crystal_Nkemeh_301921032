@@ -43,7 +43,7 @@ The successful `ping` command returned `{ ok: 1 }`, confirming that the MongoDB 
 
 ## Evidence
 
-![MongoDB connection verification](screenshots/P4_MongoDBConnection.png)
+![MongoDB connection verification](screenshots/Nkemeh_Crystal_P4_MongoDBConnection.png)
 
 ## Reference
 

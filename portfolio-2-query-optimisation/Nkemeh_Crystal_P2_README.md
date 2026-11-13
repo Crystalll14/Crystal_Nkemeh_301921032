@@ -122,17 +122,17 @@ The results are specific to the simulated benchmark environment and should not b
 
 ### SQL Scripts
 
-- [SQL Queries](Crystal_Nkemeh_301921032_P2_Queries.sql) – Contains the three SQL queries used to retrieve and analyse PurpleBank banking records.
-- [Optimisation Script](Crystal_Nkemeh_301921032_P2_Optimisation.sql) – Contains the benchmark dataset generation, execution plan analysis, indexing, and performance comparison SQL statements.
+- [SQL Queries](Nkemeh_Crystal_P2_Queries.sql) – Contains the three SQL queries used to retrieve and analyse PurpleBank banking records.
+- [Optimisation Script](Nkemeh_Crystal_P2_Optimisation.sql) – Contains the benchmark dataset generation, execution plan analysis, indexing, and performance comparison SQL statements.
 
 ### Screenshots
 
-- [Query Results](screenshots/P2_QueryResults.png) – Results of the SQL queries.
-- [Additional Query Results](screenshots/P2_QueryResults_2.png) – Additional SQL query outputs.
-- [Benchmark Records](screenshots/P2_BenchmarkRecords.png) – Verification of the 100,000 fictional transaction-history records.
-- [Before Indexing](screenshots/P2_BeforeIndex.png) – Execution plans showing sequential scans before indexing.
-- [After Indexing](screenshots/P2_AfterIndex.png) – Execution plans showing index-only scans after indexing.
-- [Final Transaction Count](screenshots/P2_FinalCount.png) – Verification that the filtered query returns 24 records.
+- [Query Results](screenshots/Nkemeh_Crystal_P2_QueryResults.png) – Results of the SQL queries.
+- [Additional Query Results](screenshots/Nkemeh_Crystal_P2_QueryResults_2.png) – Additional SQL query outputs.
+- [Benchmark Records](screenshots/Nkemeh_Crystal_P2_BenchmarkRecords.png) – Verification of the 100,000 fictional transaction-history records.
+- [Before Indexing](screenshots/Nkemeh_Crystal_P2_BeforeIndex.png) – Execution plans showing sequential scans before indexing.
+- [After Indexing](screenshots/Nkemeh_Crystal_P2_AfterIndex.png) – Execution plans showing index-only scans after indexing.
+- [Final Transaction Count](screenshots/Nkemeh_Crystal_P2_FinalCount.png) – Verification that the filtered query returns 24 records.
 
 ## 6. References
 

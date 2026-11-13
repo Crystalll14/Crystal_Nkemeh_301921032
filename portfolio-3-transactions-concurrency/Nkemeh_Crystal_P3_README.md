@@ -107,16 +107,16 @@ The experiments focused on database transaction controls. A complete banking tra
 
 ### SQL Scripts
 
-- [Transaction Management Script](Crystal_Nkemeh_301921032_P3_Transactions.sql) – Demonstrates COMMIT, ROLLBACK, and account balance verification.
-- [Session A Script](Crystal_Nkemeh_301921032_P3_SessionA.sql) – Contains the SQL commands executed by the first PostgreSQL session.
-- [Session B Script](Crystal_Nkemeh_301921032_P3_SessionB.sql) – Contains the SQL commands used to demonstrate transaction isolation and the conflicting insertion.
+- [Transaction Management Script](Nkemeh_Crystal_P3_Transactions.sql) – Demonstrates COMMIT, ROLLBACK, and account balance verification.
+- [Session A Script](Nkemeh_Crystal_P3_SessionA.sql) – Contains the SQL commands executed by the first PostgreSQL session.
+- [Session B Script](Nkemeh_Crystal_P3_SessionB.sql) – Contains the SQL commands used to demonstrate transaction isolation and the conflicting insertion.
 
 ### Screenshots
 
-- [COMMIT Evidence](screenshots/P3_Commit.png) – Successful balance update and COMMIT.
-- [ROLLBACK Evidence](screenshots/P3_Rollback.png) – Constraint violation, ROLLBACK, and balance verification.
-- [Session Waiting Evidence](screenshots/P3_SessionsWaiting.png) – Demonstrates the concurrent session waiting on a database lock.
-- [Concurrency Result](screenshots/P3_ConcurrencyResult.png) – Shows the conflicting transaction error and final verification.
+- [COMMIT Evidence](screenshots/Nkemeh_Crystal_P3_Commit.png) – Successful balance update and COMMIT.
+- [ROLLBACK Evidence](screenshots/Nkemeh_Crystal_P3_Rollback.png) – Constraint violation, ROLLBACK, and balance verification.
+- [Session Waiting Evidence](screenshots/Nkemeh_Crystal_P3_SessionsWaiting.png) – Demonstrates the concurrent session waiting on a database lock.
+- [Concurrency Result](screenshots/Nkemeh_Crystal_P3_ConcurrencyResult.png) – Shows the conflicting transaction error and final verification.
 
 ## 6. References
 
